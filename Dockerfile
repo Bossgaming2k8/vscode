@@ -2,7 +2,7 @@ FROM codercom/code-server:latest
 
 EXPOSE 8080
 
-COPY ./start.sh /start.sh
-RUN chmod +x /start.sh
+COPY ./main.sh /main.sh
+RUN chmod +x /main.sh
 
-CMD ["/start.sh"]
+CMD ["/main.sh"]
